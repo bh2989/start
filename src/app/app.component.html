@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container">
+<div class="container site-content">
   <div class="row">
     <div class="col-md-12">
       <div style="text-align:center">
@@ -52,30 +52,87 @@
       </div>
     </div>
   </div>
+  <hr>
   <div class="row">
     <div class="col-md-12">
       <h2>Popovers</h2>
-     
-     <button type="button" class="btn btn-outline-secondary" placement="top"
-        ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on top">
-  Popover on top
-</button>
-
-<button type="button" class="btn btn-outline-secondary" placement="right"
-        ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on right">
-  Popover on right
-</button>
-
-<button type="button" class="btn btn-outline-secondary" placement="bottom"
-        ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on bottom">
-  Popover on bottom
-</button>
-
-<button type="button" class="btn btn-outline-secondary" placement="left"
-        ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on left">
-  Popover on left
-</button>
-
-     </div>
+      <button type="button" class="btn btn-secondary" placement="top" ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on top">
+        Popover on top
+      </button>
+      <button type="button" class="btn btn-secondary" placement="right" ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on right">
+        Popover on right
+      </button>
+      <button type="button" class="btn btn-secondary" placement="bottom" ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on bottom">
+        Popover on bottom
+      </button>
+      <button type="button" class="btn btn-secondary" placement="left" ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on left">
+        Popover on left
+      </button>
+      <h2>Tooltip</h2>
+      <button type="button" class="btn btn-secondary" placement="top" ngbTooltip="Tooltip on top">
+        Tooltip on top
+      </button>
+      <button type="button" class="btn btn-secondary" placement="bottom" ngbTooltip="Tooltip on bottom">
+        Tooltip on bottom
+      </button>
+      <button type="button" class="btn btn-secondary" placement="left" ngbTooltip="Tooltip on left">
+        Tooltip on left
+      </button>
+      <button type="button" class="btn btn-secondary" placement="right" ngbTooltip="Tooltip on right">
+        Tooltip on right
+      </button>
+      <!-- on a hyperlink  -->
+      <p>
+        Hover over this <a href="" placement="top" ngbTooltip="Tooltip on top">sample inline hyperlink </a>to view a tooltip.
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="input-group">
+        <input class="form-control" placeholder="yyyy-mm-dd" name="dp1" [(ngModel)]="newItem.EndTime" ngbDatepicker #d1="ngbDatepicker" required>
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" type="button" (click)="d1.toggle()">
+            <i class="nc-icon-mini ui-1_calendar-57" aria-hidden="true"></i>
+          </button>
+        </span>
+      </div>
+      <div class="input-group">
+        <input class="form-control" placeholder="yyyy-mm-dd" name="dp2" [(ngModel)]="newItem1.EndTime" ngbDatepicker #d2="ngbDatepicker" required>
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" type="button" (click)="d2.toggle()">
+            <i class="nc-icon-mini ui-1_calendar-57" aria-hidden="true"></i>
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-12">
+      <ngb-tabset justify="center">
+        <ngb-tab title="Home">
+          <ng-template ngbTabContent>
+            Home Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias consectetur nesciunt quas harum tempore facere debitis laboriosam doloribus necessitatibus!
+          </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Profile">
+          <ng-template ngbTabContent>
+            Profile Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias consectetur nesciunt quas harum tempore facere debitis laboriosam doloribus necessitatibus!
+          </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Message">
+          <ng-template ngbTabContent>
+            Message Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias consectetur nesciunt quas harum tempore facere debitis laboriosam doloribus necessitatibus!
+          </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Settings">
+          <ng-template ngbTabContent>
+            Settings Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestias consectetur nesciunt quas harum tempore facere debitis laboriosam doloribus necessitatibus!
+          </ng-template>
+        </ngb-tab>
+      </ngb-tabset>
+    </div>
   </div>
 </div>
